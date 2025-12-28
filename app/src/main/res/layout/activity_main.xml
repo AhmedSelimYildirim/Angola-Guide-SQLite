@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GİRİŞ YAP"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/etKullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Adresiniz"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifreniz"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="GİRİŞ YAP" />
+
+    <Button
+        android:id="@+id/btnKayitOlSayfasinaGit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="KAYIT OL"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnKayitSilGit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="KAYIT SİL"
+        android:backgroundTint="#757575"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

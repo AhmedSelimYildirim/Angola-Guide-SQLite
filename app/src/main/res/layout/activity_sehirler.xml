@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ÖNEMLİ ŞEHİRLER"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D84315"
+            android:layout_marginBottom="20dp"/>
+
+        <TableLayout
+            android:id="@+id/tabloSehirler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:background="#FF5722"
+                android:padding="10dp">
+                <TextView
+                    android:text="ŞEHİR ADI"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:text="NÜFUS"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Şehir hakkında bilgi için ismine tıklayınız."
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="13sp"
+            android:textColor="#303F9F"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+</ScrollView>

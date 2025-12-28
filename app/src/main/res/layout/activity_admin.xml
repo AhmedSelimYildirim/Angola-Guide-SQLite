@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YÖNETİCİ PANELİ"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#B71C1C"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etSehirAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Şehir Adı (Silme için sadece burayı doldur)"
+            android:background="@android:drawable/edit_text"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etNufus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nüfus (Örn: 1.5 Milyon)"
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etAciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kısa Açıklama"
+            android:background="@android:drawable/edit_text"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnEkle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="KAYIT EKLE"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnGuncelle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="KAYDI GÜNCELLE"
+            android:backgroundTint="#2196F3"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnSil"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SADECE İSME GÖRE SİL"
+            android:backgroundTint="#F44336"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Silme işlemi için sadece Şehir Adını yazıp butona basmanız yeterlidir."
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</ScrollView>

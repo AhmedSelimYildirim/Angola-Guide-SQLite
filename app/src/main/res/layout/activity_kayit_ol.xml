@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAYIT OL"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/etYeniKadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yeni Kullanıcı Adı"
+        android:padding="15dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etYeniSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yeni Şifre"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="KAYDI TAMAMLA"
+        android:backgroundTint="#4CAF50"
+        android:textSize="18sp"/>
+
+</LinearLayout>

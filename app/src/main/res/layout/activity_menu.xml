@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANA MENÜ"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="20dp">
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button android:id="@+id/btnSolOk" android:layout_width="50dp" android:layout_height="wrap_content" android:text="&lt;" android:layout_alignParentStart="true" android:layout_centerVertical="true" android:backgroundTint="#88000000"/>
+            <Button android:id="@+id/btnSagOk" android:layout_width="50dp" android:layout_height="wrap_content" android:text="&gt;" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:backgroundTint="#88000000"/>
+        </RelativeLayout>
+
+        <Button android:id="@+id/btnGenelBilgi" android:layout_width="match_parent" android:layout_height="55dp" android:text="Angola Genel Bilgi" android:layout_marginBottom="10dp"/>
+        <Button android:id="@+id/btnNufus" android:layout_width="match_parent" android:layout_height="55dp" android:text="Nüfus Bilgileri" android:layout_marginBottom="10dp"/>
+        <Button android:id="@+id/btnSehirler" android:layout_width="match_parent" android:layout_height="55dp" android:text="Şehirler Tablosu" android:layout_marginBottom="10dp"/>
+        <Button android:id="@+id/btnTuristik" android:layout_width="match_parent" android:layout_height="55dp" android:text="Turistik Yerler" android:layout_marginBottom="10dp"/>
+
+        <Button android:id="@+id/btnAyarlar" android:layout_width="match_parent" android:layout_height="55dp" android:text="AYARLAR (Profil/Tema)" android:backgroundTint="#607D8B" android:layout_marginBottom="10dp"/>
+
+        <Button android:id="@+id/btnAdmin" android:layout_width="match_parent" android:layout_height="55dp" android:text="ADMİN PANELİ" android:backgroundTint="#D32F2F" android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
