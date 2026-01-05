@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     if (dbHelper.girisKontrol(mail, pass)) {
                         Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                         intent.putExtra("userEmail", mail);
-                        intent.putExtra("adminYetkisi", mail.equals("admin@test.com") || mail.equals("selim@test.com"));
+                        intent.putExtra("adminYetkisi", mail.equals("admin@email.com") || mail.equals("selim@test.com"));
                         startActivity(intent);
                         finish();
                     } else {
